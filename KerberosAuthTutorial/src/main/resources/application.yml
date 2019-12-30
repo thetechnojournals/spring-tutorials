@@ -1,0 +1,9 @@
+server:
+    port: 8080
+app:
+    service-principal: HTTP/myserver.localhost@MYSERVER.LOCALHOST
+    keytab-location: file:/Users/ashok/krb5/conf/krb5.keytab
+
+logging.level.org.springframework.security: TRACE
+
+server.servlet-path: /
