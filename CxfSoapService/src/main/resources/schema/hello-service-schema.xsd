@@ -1,0 +1,20 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://services.ttj.com/hello-service"
+           targetNamespace="http://services.ttj.com/hello-service" elementFormDefault="qualified">
+
+    <xs:element name="sayHelloRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="userName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sayHelloResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
